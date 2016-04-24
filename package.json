@@ -1,0 +1,47 @@
+{
+  "name": "angular2-example",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "test": "karma start karma.conf.js",
+    "build": "gulp build",
+    "start": "concurrent --kill-others \"gulp watch\" \"lite-server\"",
+    "postinstall": "typings install",
+    "coverage": "http-server -c-1 -o -p 9875 ./report/report-coverage"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.14",
+    "es6-shim": "^0.35.0",
+    "es6-promise": "3.0.2",
+    "lodash": "^4.11.1",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.25",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.3",
+    "gulp-typescript": "^2.8.0",
+    "http-server": "^0.8.5",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-coverage": "^0.5.5",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.2",
+    "lite-server": "^2.2.0",
+    "remap-istanbul": "^0.5.1",
+    "systemjs": "^0.19.25",
+    "tslint": "^3.5.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12"
+  }
+}
